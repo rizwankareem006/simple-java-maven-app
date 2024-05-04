@@ -3,6 +3,7 @@ package com.mycompany.app;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 /**
  * Unit test for simple App.
@@ -22,4 +23,12 @@ public class AppTest
         App app = new App();
         assertEquals("Hello World!", app.getMessage());
     }
+
+    @Test
+    public void testFailScenario()
+    {
+        App app = new App();
+        assertNotEquals("Rizwan", app.getMessage());
+    }
+
 }
