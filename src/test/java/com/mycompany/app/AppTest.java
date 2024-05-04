@@ -28,7 +28,7 @@ public class AppTest
     public void testFailScenario()
     {
         App app = new App();
-        assertNotEquals("Rizwan", app.getMessage());
+        assertEquals("Rizwan", app.getMessage());
     }
 
 }
